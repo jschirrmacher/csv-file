@@ -1,5 +1,5 @@
 {
-  "name": "csv-file",
+  "name": "@jschirrmacher/csv-file",
   "version": "1.0.0",
   "description": "Comma separated files (CSV) for use as log output",
   "main": "dist/index.js",

@@ -1,4 +1,4 @@
-import csvFile, { type FileSystem } from "./csv-file"
+import csvFile, { type FileSystem } from "./index"
 
 let statSize = 0
 

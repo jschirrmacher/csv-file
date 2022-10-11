@@ -1,11 +1,11 @@
 {
-  "name": "@jschirrmacher/csv-file",
+  "name": "logcsv",
   "version": "1.0.2",
   "description": "Comma separated files (CSV) for use as log output",
   "main": "dist/index.js",
   "license": "Apache License v2.0",
   "repository": {
-    "url": "https://github.com/jschirrmacher/csv-file.git"
+    "url": "https://github.com/jschirrmacher/logcsv.git"
   },
   "keywords": [
     "csv",

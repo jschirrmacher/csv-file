@@ -1,4 +1,4 @@
-# CSV-File
+# Log CSV
 
 Logging in CSV format seems to me like a good idea, because it is both, a compact format and human readable.
 
@@ -6,10 +6,10 @@ Naturally, there is a lot of existing modules providing functions to read and wr
 
 Writing a log line is as simple as
 
-    import CSVFile from "csv-file"
+    import LogCSV from "logcsv"
 
-    CSVFile("my-log.csv").append({ time: new Date(), message: "An error occured!" })
+    LogCSV("my-log.csv").append({ time: new Date(), message: "An error occured!" })
 
 As CSV files can only have a fixed structure (same fields for all lines), the fields are defined either with the first `append()` call, in which case all visible properties of the given object are used as fields to log. Subsequent `append()` calls will only write those same fields and ignore all others.
 
-It is also possible to read a CSV file - this indeed does break my promise 'only the parts needed', but I have a use case to read my logs later (actually for tests), and didn't want to use another library for that. But this implementation is rather simple, no streaming, only reading the whole file.
+It is also possible to read a CSV log file - this indeed does break my promise 'only the parts needed', but I have a use case to read my logs later (actually for tests), and didn't want to use another library for that. But this implementation is rather simple, no streaming, only reading the whole file.

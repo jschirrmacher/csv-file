@@ -1,12 +1,6 @@
 import fs from "fs"
 
-export interface FileSystem {
-  appendFileSync: (fileName: string, data: string) => void
-  existsSync: (fileName: string) => boolean
-  readFileSync: (fileName: string) => Buffer
-  statSync: (fileName: string) => { size: number }
-  writeFileSync: (fileName: string, data: string) => void
-}
+export type FileSystem = Pick<typeof fs, "appendFileSync" | "existsSync" | "readFileSync" | "statSync" | "writeFileSync">
 
 function objectMapper(headers: string[]) {
   return (values: string[]) =>

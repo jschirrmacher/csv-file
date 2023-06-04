@@ -26,9 +26,13 @@
   "types": "./dist/cjs/index.d.ts",
   "scripts": {
     "test": "vitest --run",
-    "prepublishOnly": "npm run build:esm && npm run build:cjs",
+    "build": "npm run build:esm && npm run build:cjs",
     "build:esm": "tsc -p tsconfig.esm.json",
-    "build:cjs": "tsc -p tsconfig.cjs.json"
+    "build:cjs": "tsc -p tsconfig.cjs.json",
+    "version:patch": "npm run build && npm version patch && git push --follow-tags && npm publish",
+    "version:minor": "npm run build && npm version minor && git push --follow-tags && npm publish",
+    "version:major": "npm run build && npm version major && git push --follow-tags && npm publish",
+    "update": "npx -y npm-check-updates -d -u -e 2"
   },
   "author": {
     "name": "Joachim Schirrmacher",

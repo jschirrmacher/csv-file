@@ -1,14 +1,15 @@
-import logcsv, { type FileSystem } from "./index"
+import { beforeEach, describe, expect, it, vi } from "vitest"
+import logcsv from "./index"
 
 let statSize = 0
 
 function mockFileSystem(data: string = "") {
   return {
-    appendFileSync: jest.fn(),
-    existsSync: jest.fn(),
-    readFileSync: jest.fn().mockReturnValue(data),
-    statSync: jest.fn().mockImplementation(() => ({ size: statSize })),
-    writeFileSync: jest.fn()
+    appendFileSync: vi.fn(),
+    existsSync: vi.fn(),
+    readFileSync: vi.fn().mockReturnValue(data),
+    statSync: vi.fn().mockImplementation(() => ({ size: statSize })),
+    writeFileSync: vi.fn()
   }
 }
 

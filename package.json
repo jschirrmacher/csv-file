@@ -1,6 +1,6 @@
 {
   "name": "logcsv",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Comma separated files (CSV) for use as log output",
   "license": "Apache License v2.0",
   "repository": {

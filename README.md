@@ -1,5 +1,11 @@
 # Log CSV
 
+## DEPRECATION NOTICE
+
+This library is now DEPRECATED. You should instead use [useful-typescript-functions](https://github.com/jschirrmacher/useful-typescript-functions) which contains this functions now and can be used in just the same way, but even more!
+
+## Documentation
+
 Logging in CSV format seems to me like a good idea, because it is both, a compact format and human readable.
 
 Naturally, there is a lot of existing modules providing functions to read and write csv files, but all of them seems to me like too much of taking a sledgehammer to crack a nut. So I decided to create my own which only contains the parts needed for this special use case.

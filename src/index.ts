@@ -1,3 +1,5 @@
-import { CSVLogger } from 'useful-typescript-functions';
+import * as utf from 'useful-typescript-functions'
 
-export const logcsv = CSVLogger
+export type { FileSystem } from "useful-typescript-functions"
+export const logcsv = utf.CSVLogger
+export default logcsv

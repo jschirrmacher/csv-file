@@ -46,6 +46,6 @@
     "typescript": "^5.1.6"
   },
   "dependencies": {
-    "useful-typescript-functions": "^1.8.1"
+    "useful-typescript-functions": "^2.0.0"
   }
 }
